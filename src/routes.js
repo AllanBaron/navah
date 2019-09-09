@@ -20,7 +20,12 @@ export default [
     path: "/",
     exact: true,
     layout: DefaultLayout,
-    component: () => <Redirect to="/blog-overview" />
+    component: () => <Redirect to="/dashboard" />
+  },
+  {
+    path: "/dashboard",
+    layout: DefaultLayout,
+    component: BlogOverview
   },
   {
     path: "/produtos",
@@ -33,6 +38,12 @@ export default [
     exact: true,
     layout: DefaultLayout,
     component: Products.Edit
+  },
+  {
+    path: "/Categorias",
+    exact: true,
+    layout: DefaultLayout,
+    component: Errors
   },
 
 

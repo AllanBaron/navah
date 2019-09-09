@@ -2,7 +2,7 @@ export default function() {
   return [
     {
       title: "Dashboard",
-      to: "/blog-overview",
+      to: "/dashboard",
       htmlBefore: '<i class="material-icons">dashboard</i>',
       htmlAfter: ""
     },
@@ -10,6 +10,12 @@ export default function() {
       title: "Produtos",
       to: "/produtos",
       htmlBefore: '<i class="material-icons">view_list</i>',
+      htmlAfter: ""
+    },
+    {
+      title: "Categorias",
+      to: "/categorias",
+      htmlBefore: '<i class="material-icons">category</i>',
       htmlAfter: ""
     },
     // {

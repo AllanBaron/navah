@@ -40,11 +40,11 @@ export default class UserActions extends React.Component {
         </DropdownToggle>
         <Collapse tag={DropdownMenu} right small open={this.state.visible}>
           <DropdownItem tag={Link} to="user-profile">
-            <i className="material-icons">&#xE7FD;</i> Profile
+            <i className="material-icons">&#xE7FD;</i> Perfil
           </DropdownItem>
           <DropdownItem divider />
           <DropdownItem tag={Link} to="/" className="text-danger">
-            <i className="material-icons text-danger">&#xE879;</i> Logout
+            <i className="material-icons text-danger">&#xE879;</i> Sair
           </DropdownItem>
         </Collapse>
       </NavItem>

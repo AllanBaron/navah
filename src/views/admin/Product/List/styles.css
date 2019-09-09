@@ -1,0 +1,14 @@
+table i.material-icons {
+  color: #5a6169 !important;
+  font-size: 17px !important;
+}
+
+table a.edit i.material-icons:hover {
+  color: #0056b3 !important
+}
+
+
+table a.delete i.material-icons:hover {
+  color: #a70c0c !important
+}
+
