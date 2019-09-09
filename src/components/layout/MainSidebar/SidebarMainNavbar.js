@@ -31,16 +31,16 @@ class SidebarMainNavbar extends React.Component {
             style={{ lineHeight: "25px" }}
           >
             <div className="d-table m-auto">
-              <img
+              {/* <img
                 id="main-logo"
                 className="d-inline-block align-top mr-1"
                 style={{ maxWidth: "25px" }}
-                src={require("../../../images/shards-dashboards-logo.svg")}
+                src={require("../../../images/logo.png")}
                 alt="Shards Dashboard"
-              />
+              /> */}
               {!hideLogoText && (
                 <span className="d-none d-md-inline ml-1">
-                  Shards Dashboard
+                  Painel Admin
                 </span>
               )}
             </div>

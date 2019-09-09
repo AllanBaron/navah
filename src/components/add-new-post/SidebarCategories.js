@@ -22,25 +22,25 @@ const SidebarCategories = ({ title }) => (
       <ListGroup flush>
         <ListGroupItem className="px-3 pb-2">
           <FormCheckbox className="mb-1" value="uncategorized" defaultChecked>
-            Uncategorized
+            Sem Categoria
           </FormCheckbox>
           <FormCheckbox className="mb-1" value="design" defaultChecked>
-            Design
+            Notebooks
           </FormCheckbox>
           <FormCheckbox className="mb-1" value="development">
-            Development
+            Brinquedo
           </FormCheckbox>
           <FormCheckbox className="mb-1" value="writing">
-            Writing
+            Cama
           </FormCheckbox>
           <FormCheckbox className="mb-1" value="books">
-            Books
+            Cozinha
           </FormCheckbox>
         </ListGroupItem>
 
         <ListGroupItem className="d-flex px-3">
           <InputGroup className="ml-auto">
-            <FormInput placeholder="New category" />
+            <FormInput placeholder="Nova Categoria" />
             <InputGroupAddon type="append">
               <Button theme="white" className="px-2">
                 <i className="material-icons">add</i>

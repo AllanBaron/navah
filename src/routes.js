@@ -4,7 +4,9 @@ import { Redirect } from "react-router-dom";
 // Layout Types
 import { DefaultLayout } from "./layouts";
 
-// Route Views
+import * as Products from "./views/admin/Product";
+
+// TEMPLATE - Route Views
 import BlogOverview from "./views/template/BlogOverview";
 import UserProfileLite from "./views/template/UserProfileLite";
 import AddNewPost from "./views/template/AddNewPost";
@@ -22,8 +24,15 @@ export default [
   },
   {
     path: "/produtos",
+    exact: true,
     layout: DefaultLayout,
-    component: BlogOverview
+    component: Products.List
+  },
+  {
+    path: "/produtos/editar/:slug",
+    exact: true,
+    layout: DefaultLayout,
+    component: Products.Edit
   },
 
 
