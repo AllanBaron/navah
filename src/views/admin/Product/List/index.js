@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 
 import api from "../../../../services/api";
-import { Container, Row, Col, Card, CardHeader, CardBody } from "shards-react";
+import { Container, Row, Col, Card, CardHeader, CardBody, Button } from "shards-react";
+import { Link } from "react-router-dom";
 
 import ProductsList from "./products";
 
@@ -41,12 +42,16 @@ export default class ProductsTables extends Component {
           <PageTitle sm="4" title="Todos os Produtos" subtitle="Home / Produtos" className="text-sm-left" />
         </Row>
 
+
         {/* Table */}
         <Row>
           <Col>
             <Card small className="mb-4">
               <CardHeader className="border-bottom">
                 <h6 className="m-0">Produtos</h6>
+                <Link className="btn btn-primary" to={"/admin/produtos/novo"}>
+                  Novo Produto
+                </Link>
               </CardHeader>
               <CardBody className="p-0 pb-3">
                 <table className="table mb-0">

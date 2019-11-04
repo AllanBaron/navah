@@ -12,25 +12,25 @@ import {
 } from "shards-react";
 
 import PageTitle from "../../../components/admin/common/PageTitle";
-import Colors from "../../../components/components-overview/Colors";
-import Checkboxes from "../../../components/components-overview/Checkboxes";
-import RadioButtons from "../../../components/components-overview/RadioButtons";
-import ToggleButtons from "../../../components/components-overview/ToggleButtons";
-import SmallButtons from "../../../components/components-overview/SmallButtons";
-import SmallOutlineButtons from "../../../components/components-overview/SmallOutlineButtons";
-import NormalButtons from "../../../components/components-overview/NormalButtons";
-import NormalOutlineButtons from "../../../components/components-overview/NormalOutlineButtons";
-import Forms from "../../../components/components-overview/Forms";
-import FormValidation from "../../../components/components-overview/FormValidation";
-import CompleteFormExample from "../../../components/components-overview/CompleteFormExample";
-import Sliders from "../../../components/components-overview/Sliders";
-import ProgressBars from "../../../components/components-overview/ProgressBars";
-import ButtonGroups from "../../../components/components-overview/ButtonGroups";
-import InputGroups from "../../../components/components-overview/InputGroups";
-import SeamlessInputGroups from "../../../components/components-overview/SeamlessInputGroups";
-import CustomFileUpload from "../../../components/components-overview/CustomFileUpload";
-import DropdownInputGroups from "../../../components/components-overview/DropdownInputGroups";
-import CustomSelect from "../../../components/components-overview/CustomSelect";
+import Colors from "../../../components/admin/components-overview/Colors";
+import Checkboxes from "../../../components/admin/components-overview/Checkboxes";
+import RadioButtons from "../../../components/admin/components-overview/RadioButtons";
+import ToggleButtons from "../../../components/admin/components-overview/ToggleButtons";
+import SmallButtons from "../../../components/admin/components-overview/SmallButtons";
+import SmallOutlineButtons from "../../../components/admin/components-overview/SmallOutlineButtons";
+import NormalButtons from "../../../components/admin/components-overview/NormalButtons";
+import NormalOutlineButtons from "../../../components/admin/components-overview/NormalOutlineButtons";
+import Forms from "../../../components/admin/components-overview/Forms";
+import FormValidation from "../../../components/admin/components-overview/FormValidation";
+import CompleteFormExample from "../../../components/admin/components-overview/CompleteFormExample";
+import Sliders from "../../../components/admin/components-overview/Sliders";
+import ProgressBars from "../../../components/admin/components-overview/ProgressBars";
+import ButtonGroups from "../../../components/admin/components-overview/ButtonGroups";
+import InputGroups from "../../../components/admin/components-overview/InputGroups";
+import SeamlessInputGroups from "../../../components/admin/components-overview/SeamlessInputGroups";
+import CustomFileUpload from "../../../components/admin/components-overview/CustomFileUpload";
+import DropdownInputGroups from "../../../components/admin/components-overview/DropdownInputGroups";
+import CustomSelect from "../../../components/admin/components-overview/CustomSelect";
 
 const ComponentsOverview = () => (
   <div>

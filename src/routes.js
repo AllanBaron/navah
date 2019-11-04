@@ -35,6 +35,12 @@ export default [
     component: Product.List
   },
   {
+    path: "/admin/produtos/novo",
+    exact: true,
+    layout: DefaultLayout,
+    component: Product.New
+  },
+  {
     path: "/admin/produtos/editar/:id",
     exact: true,
     layout: DefaultLayout,

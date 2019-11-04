@@ -11,7 +11,7 @@ import {
   Button
 } from "shards-react";
 
-const SidebarActions = ({ title, id, remove, submit }) => (
+const SidebarActions = ({ title, id, remove = null, submit }) => (
   <Card small className="mb-3">
     <CardHeader className="border-bottom">
       <h6 className="m-0">{title}</h6>
@@ -44,9 +44,11 @@ const SidebarActions = ({ title, id, remove, submit }) => (
           </span>
         </ListGroupItem>
         <ListGroupItem className="d-flex px-3 border-0">
-          <Button outline theme="accent" size="sm" onClick={remove}>
-            <i className="material-icons">delete</i> Remover
-          </Button>
+          { remove != null ?
+            <Button outline theme="accent" size="sm" onClick={remove}>
+              <i className="material-icons">delete</i> Remover
+            </Button>
+          : ''}
           <Button theme="accent" size="sm" className="ml-auto" onClick={submit}>
             <i className="material-icons">save</i> Salvar
           </Button>

@@ -10,7 +10,7 @@ import {
   CardFooter
 } from "shards-react";
 
-import Chart from "../../utils/chart";
+import Chart from "../../../utils/chart";
 
 class UsersByDevice extends React.Component {
   constructor(props) {

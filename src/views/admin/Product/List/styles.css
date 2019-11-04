@@ -16,3 +16,10 @@ table button.delete i.material-icons:hover {
   color: #a70c0c !important
 }
 
+.card-header h6 {
+  padding-top: 5px;
+  float: left;
+}
+.card-header a.btn {
+  float: right;
+}
