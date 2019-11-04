@@ -3,42 +3,42 @@ import React, { Component } from "react";
 import api from "../../../../services/api";
 import { Container, Row, Col, Card, CardHeader, CardBody } from "shards-react";
 
-import ProductsList from "./products";
+import CategoriesList from "./category";
 
 import PageTitle from "../../../../components/admin/common/PageTitle";
 
-export default class ProductsTables extends Component {
+export default class CategoriesTables extends Component {
   state = {
     loading: false,
-    products: []
+    categories: []
   }
 
   async componentDidMount() {
     this.setState({ loading: true });
-    const products = await api.get("product");
-    this.setState({ products: products.data });
+    const categories = await api.get("category");
+    this.setState({ categories: categories.data });
   }
 
-  hundleRemoveProduct = async id => {
-    const { products } = this.state;
+  hundleRemoveCategorias = async id => {
+    const { categories } = this.state;
 
-    const response = await api.delete(`product/${id}`);
+    const response = await api.delete(`category/${id}`);
 
     if(response.data){
-      const updatedProducts = products.filter(product => product.id !== id);
+      const updatedCategories = categories.filter(category => category.id !== id);
 
-      this.setState({ products: updatedProducts });
+      this.setState({ categories: updatedCategories });
     }
   }
 
   render() {
-    const { products } = this.state;
+    const { categories } = this.state;
 
     return (
       <Container fluid className="main-content-container px-4">
         {/* Page Header */}
         <Row noGutters className="page-header py-4">
-          <PageTitle sm="4" title="Todos os Produtos" subtitle="Home / Produtos" className="text-sm-left" />
+          <PageTitle sm="4" title="Todos as Categorias" subtitle="Home / Categorias" className="text-sm-left" />
         </Row>
 
         {/* Table */}
@@ -46,7 +46,7 @@ export default class ProductsTables extends Component {
           <Col>
             <Card small className="mb-4">
               <CardHeader className="border-bottom">
-                <h6 className="m-0">Produtos</h6>
+                <h6 className="m-0">Categorias</h6>
               </CardHeader>
               <CardBody className="p-0 pb-3">
                 <table className="table mb-0">
@@ -59,26 +59,14 @@ export default class ProductsTables extends Component {
                         Nome
                       </th>
                       <th scope="col" className="border-0">
-                        Categorias
-                      </th>
-                      <th scope="col" className="border-0">
-                        Preço
-                      </th>
-                      <th scope="col" className="border-0">
-                        Qtd. Estoque
-                      </th>
-                      <th scope="col" className="border-0">
-                        Desconto
-                      </th>
-                      <th scope="col" className="border-0">
                         Ação
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <ProductsList
-                      products={products}
-                      removeProduct={this.hundleRemoveProduct}
+                    <CategoriesList
+                      categorias={categories}
+                      removeCategory={this.hundleRemoveCategorias}
                     />
                   </tbody>
                 </table>

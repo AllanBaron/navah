@@ -4,7 +4,8 @@ import { Redirect } from "react-router-dom";
 // Layout Types
 import { DefaultLayout } from "./layouts";
 
-import * as Products from "./views/admin/Product";
+import * as Product from "./views/admin/Product";
+import * as Category from "./views/admin/Category";
 
 // TEMPLATE - Route Views
 import BlogOverview from "./views/template/BlogOverview";
@@ -20,30 +21,30 @@ export default [
     path: "/",
     exact: true,
     layout: DefaultLayout,
-    component: () => <Redirect to="/dashboard" />
+    component: () => <Redirect to="/admin/dashboard" />
   },
   {
-    path: "/dashboard",
+    path: "/admin/dashboard",
     layout: DefaultLayout,
     component: BlogOverview
   },
   {
-    path: "/produtos",
+    path: "/admin/produtos",
     exact: true,
     layout: DefaultLayout,
-    component: Products.List
+    component: Product.List
   },
   {
-    path: "/produtos/editar/:slug",
+    path: "/admin/produtos/editar/:id",
     exact: true,
     layout: DefaultLayout,
-    component: Products.Edit
+    component: Product.Edit
   },
   {
-    path: "/Categorias",
+    path: "/admin/categorias",
     exact: true,
     layout: DefaultLayout,
-    component: Errors
+    component: Category.List
   },
 
 
