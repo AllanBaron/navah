@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import api from "../../../../services/api";
 import { Container, Row, Col, Card, CardHeader, CardBody } from "shards-react";
+import { Link } from "react-router-dom";
 
 import CategoriesList from "./category";
 
@@ -47,6 +48,9 @@ export default class CategoriesTables extends Component {
             <Card small className="mb-4">
               <CardHeader className="border-bottom">
                 <h6 className="m-0">Categorias</h6>
+                <Link className="btn btn-primary" to={"/admin/categoria/novo"}>
+                  Nova Categoria
+                </Link>
               </CardHeader>
               <CardBody className="p-0 pb-3">
                 <table className="table mb-0">

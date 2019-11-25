@@ -43,7 +43,7 @@ export default class EditProduct extends Component {
     const { product } = this.state;
 
     const response = await api.delete(`product/${product.id}`);
-
+    console.log(response);
     if(response.data){
       this.props.history.push(`/admin/produtos/`);
     }

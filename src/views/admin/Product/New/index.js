@@ -10,13 +10,13 @@ import SidebarCategories from "../../../../components/admin/add-new-post/Sidebar
 export default class EditProduct extends Component {
   state = {
     loading: false,
-    product: { name: '', description: '', price: 0, qty_stock: 0, discount: 0 }
+    product: { name: '', description: '', price: 0, qty_stock: 10, discount: 0, category_id: 2 }
   }
 
   handleSubmit = async () => {
     const { product } = this.state;
 
-    const response = await api.post(`product/`, product);
+    const response = await api.post("product", product);
 
     if(response.data){
       this.props.history.push(`/admin/produtos/`);
